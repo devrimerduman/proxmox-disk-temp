@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Proxmox Disk Temperature Monitor (proxmox-disk-temp)
-# Version: v1.0.0
+# Version: v1.1.1
 # This script monitors and displays the health of all connected disks on a Proxmox system.
 
 # Display header
