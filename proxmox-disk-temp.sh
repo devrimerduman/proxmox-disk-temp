@@ -15,7 +15,7 @@ for disk in /dev/sd?; do
   airflow=$(smartctl -A $disk | grep -i "Airflow_Temperature_Cel" | awk '{print $10}')
   temp=$(smartctl -A $disk | grep -i "Temperature_Celsius" | awk '{print $10}')
   
-  # Kapasiteyi TB cinsine çevirme
+  # Print disk capacity in TB if applicable
   if [[ "$capacity" == *"G"* ]]; then
     capacity=$(echo "$capacity" | sed 's/G//g')
     capacity=$(awk "BEGIN {printf \"%.2f TB\", $capacity/1024}")
