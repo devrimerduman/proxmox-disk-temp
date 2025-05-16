@@ -5,7 +5,7 @@
 # This script monitors and displays the health of all connected disks on a Proxmox system.
 
 # Display header
-printf "%-10s %-50s %-15s %-20s %-20s\n" "Disk" "Model" "Kapasite (TB)" "Airflow Temp (°C)" "Temp Celsius (°C)"
+printf "%-10s %-50s %-15s %-20s %-20s\n" "Disk" "Model" "Capacity (TB)" "Airflow Temp (°C)" "Temp Celsius (°C)"
 echo "---------------------------------------------------------------------------------------------------------------"
 
 # Scan and display disk information
